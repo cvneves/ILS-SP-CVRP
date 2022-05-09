@@ -1,5 +1,5 @@
 # ILSSP-CVRP
-This is a reimplementation of the ILSSP matheuristic [[1]](#1)[3](#3) for solving the Capacitated Vehicle Routing Problem. The method relies in the Iterated Local Search matheuristic for constructing good solutions whose routes are feeded to a pool. Routes from the pool are then chosen by using an exact procedure in an attempt to construct obtain better solutions. 
+This is a reimplementation of the ILSSP matheuristic [[1]](#1)[[3]](#3) for solving the Capacitated Vehicle Routing Problem. The method relies in the Iterated Local Search matheuristic for constructing good solutions whose routes are feeded to a pool. Routes from the pool are then chosen by using an exact procedure in an attempt to construct obtain better solutions. 
 
 ### Requirements and usage
 Both GCC 9.4.0 and [IBM CPLEX 20.1](https://www.ibm.com/products/ilog-cplex-optimization-studio) are required to compile the code. The latter may be obtained freely through an academic license. The makefile is configured to import the CPLEX libraries from their default installation folder (`/opt/ibm/ILOG/CPLEX_StudioXXX`). Nevertheless, importing them from a different folder, as well as using prior versions of the solver, should require minor changes in the makefile only.
