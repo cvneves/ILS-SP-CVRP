@@ -1,7 +1,7 @@
 # ILS-SP-CVRP
 This repository contains a reimplementation of the ILSSP matheuristic [[1](#1), [3](#3)], devised for solving the Capacitated Vehicle Routing Problem. The method relies on the Iterated Local Search metaheuristic for constructing and improving solutions. During each iteration, routes belonging to the best solutions are feeded to a pool. The problem of finding the best solution by using routes stored in the pool, which reduces to the Set Partitioning Problem, is solved by employing a MIP solver.
 
-In its current state, the code is aimed specifically at the canonical version of the VRP, which considers only the vehicle capacities. Furthermore, slight modifications were made to the previously cited versions in order to address the more recent benchmark set proposed by [[2](#2)], which may be found in the `Instances` folder. Some of the changes include tweaks in the algorithm's parameters (e.g., number of iterations, route pool acceptance tolerance) and allowing an unrestricted number of vehicles in the solutions (as opposed to a fixed fleet).
+In its current state, the code is aimed specifically at the canonical version of the VRP, which considers only the vehicle capacities. Furthermore, slight modifications were made to the previously cited versions in order to address the more recent benchmark set proposed by [[2](#2)], whose instances may be found in the `Instances` folder. Some of the changes include tweaks in the algorithm's parameters (e.g., number of iterations, route pool acceptance tolerance) and allowing an unrestricted number of vehicles in the solutions (as opposed to a fixed fleet).
 
 ## Requirements and usage
 
