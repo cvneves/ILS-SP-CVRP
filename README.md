@@ -3,8 +3,6 @@ This repository contains a reimplementation of the ILSSP matheuristic [[1](#1), 
 
 In its current state, the code is aimed specifically at the canonical version of the VRP, which considers only the vehicle capacities. Furthermore, slight modifications were made to the previously cited versions in order to address the more recent benchmark set proposed by [[2](#2)]. Some of these changes include tweaks in the algorithm's parameters (e.g., number of iterations, route pool acceptance tolerance) and allowing an unrestricted number of vehicles in the solutions (as opposed to a fixed fleet).
 
-Some of the changes parameter tweaks (e.g. number of iterations, route pool acceptance tolerance), as well as attending the new standard of unrestricted vehicles in the solutions.
-
 ## Requirements and usage
 Both GCC 9.4.0 and [IBM CPLEX 20.1](https://www.ibm.com/products/ilog-cplex-optimization-studio) are required to compile the code. The latter may be obtained freely through an academic license. The makefile is configured to import the CPLEX libraries from their default installation folder (`/opt/ibm/ILOG/CPLEX_StudioXXX`). Nevertheless, importing them from a different folder, as well as using prior versions of the solver, should require minor changes in the makefile only.
 
