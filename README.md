@@ -4,12 +4,11 @@ A matheuristic approach for the Capacitated Vehicle Routing Problem. Test [[1]](
 ### Requirements and usage
 Both GCC 9.4.0 and [IBM CPLEX 20.1](https://www.ibm.com/products/ilog-cplex-optimization-studio) are required to compile the code. The latter may be obtained freely through an academic license. The makefile is configured to import the CPLEX libraries from their default installation folder (`/opt/ibm/ILOG/CPLEX_StudioXXX`). Nevertheless, importing them from a different folder, as well as using prior versions of the solver, should require minor changes in the makefile only.
 
-Once this repository is cloned, the code should be compiled by 
-
+Once the repository is cloned, compile it by going to the `ILSSP` directory and using the `make` command. Finally, enter the command
+```sh
+./rvrp.out ../Instances/instance_name.vrp
 ```
-make
-./rvrp.out instance_name
-```
+to run the code.
 
 
 ### References
