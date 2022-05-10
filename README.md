@@ -7,7 +7,7 @@ In its current state, the code is aimed specifically at the canonical version of
 
 Both GCC 9.4.0 and [IBM CPLEX 20.1](https://www.ibm.com/products/ilog-cplex-optimization-studio) are required to compile the code. The latter may be obtained freely through an academic license. The makefile is configured to import the CPLEX libraries from their default installation folder (`/opt/ibm/ILOG/CPLEX_StudioXXX`). Nevertheless, importing them from a different folder, as well as using prior versions of the solver, should require minor changes in the makefile only.
 
-Once the repository is cloned, compile the code by going to the `ILSSP` directory and using the `make` command. Finally, enter the command
+Once the repository is cloned, compile the code by going to the `ILS-SP` directory and using the `make` command. Finally, enter the command
 ```sh
 ./rvrp.out ../Instances/instance_name.vrp
 ```
