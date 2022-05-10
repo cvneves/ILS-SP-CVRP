@@ -1,5 +1,5 @@
 # ILS-SP-CVRP
-This repository contains a reimplementation of the ILSSP matheuristic [[1](#1), [3](#3)], devised for solving the Capacitated Vehicle Routing Problem. The method relies on the Iterated Local Search metaheuristic for constructing and improving solutions. During each iteration, routes belonging to the best solutions are feeded to a pool. The problem of finding the best solution by using routes stored in the pool reduces to the Set Partitioning Problem, is solved by employing a MIP solver.
+This repository contains a reimplementation of the ILSSP matheuristic [[1](#1), [3](#3)], devised for solving the Capacitated Vehicle Routing Problem. The method relies on the Iterated Local Search metaheuristic for constructing and improving solutions. During each iteration, routes belonging to the best solutions are feeded to a pool. A MIP solver is then employed to find the best solution by using routes stored in the pool, which reduces to the Set Partitioning Problem.
 
 In its current state, the code is aimed specifically at the canonical version of the VRP, which is constrained only by the vehicle capacities. Furthermore, in order to address the more recent benchmark set proposed by [[2](#2)], slight changes were made to the previously cited versions of the algorithm. These changes consist mainly in tweaks in the algorithm's parameters (e.g., number of iterations, route pool acceptance tolerance) and allowing an unrestricted number of vehicles in the solutions (as opposed to a fixed fleet). Instances from the benchmark set just mentioned, taken from [CVRPLIB](http://vrp.galgos.inf.puc-rio.br/index.php/en/), were also included in the `Instances` folder.
 
@@ -11,7 +11,7 @@ Both GCC 9.4.0 and [IBM CPLEX 20.1](https://www.ibm.com/products/ilog-cplex-opti
 
 Once the repository is cloned, compile the code by going to the `ILS-SP` directory and using the `make` command. Finally, enter the command
 ```sh
-./rvrp.out ../Instances/instance_name.vrp
+./ilssp.out ../Instances/instance_name.vrp
 ```
 to run.
 
