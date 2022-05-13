@@ -1,5 +1,5 @@
 # ILS-SP-CVRP
-This repository contains a reimplementation of the ILS-SP matheuristic [[1](#1), [3](#3)] for solving the Capacitated Vehicle Routing Problem. The method relies on the Iterated Local Search (ILS) [4](#4) metaheuristic for constructing and improving solutions. During each iteration, routes belonging to the best solutions are feeded to a pool. A MIP solver is then employed to find the best solution by combining routes stored in the pool, which reduces to the Set Partitioning (SP) Problem.
+This repository contains a reimplementation of the ILS-SP matheuristic [[1](#1), [3](#3)] for solving the Capacitated Vehicle Routing Problem. The method relies on the Iterated Local Search (ILS) [[4](#4)] metaheuristic for constructing and improving solutions. During each iteration, routes belonging to the best solutions are feeded to a pool. A MIP solver is then employed to find the best solution by combining routes stored in the pool, which reduces to the Set Partitioning (SP) Problem.
 
 In its current state, the code is aimed specifically at the canonical version of the VRP, which is constrained only by the vehicle capacities. Furthermore, in order to address the more recent benchmark set proposed in [[2](#2)], slight changes were made to the previously cited versions of the algorithm. These changes consist mainly in tweaks in the algorithm's parameters (e.g., number of iterations, route pool acceptance tolerance) and allowing an unrestricted number of vehicles in the solutions (as opposed to a fixed fleet). Instances from the benchmark set just mentioned, taken from [CVRPLIB](http://vrp.galgos.inf.puc-rio.br/index.php/en/), were also included in the `Instances` folder.
 
@@ -25,4 +25,4 @@ A hybrid algorithm for a class of vehicle routing problems. Computers & Operatio
 
 <a id="3">[3]</a> Subramanian, A.; Ochi, L.; Uchoa, E. (2012). Heuristic, Exact and Hybrid Approaches for Vehicle Routing Problems. Phd Thesis. ([Download](http://www.ic.uff.br/PosGraduacao/frontend-tesesdissertacoes/download.php?id=532.pdf&tipo=trabalho))
 
-<a id="4">[4]</a> H. Lourenço; O. Martin; T. Stützle (Eds.), Handbook of Metaheuristics, Springer International Publishing (2019), pp. 129-168. ([DOI](https://doi.org/10.1007/978-3-319-91086-4_5))
+<a id="4">[4]</a> H. Lourenço; O. Martin; T. Stützle. Iterated Local Search: Framework and Applications. Handbook of Metaheuristics. G. Michel; P. Jean-Yves". Springer International Publishing (2019), pp. 129-168. ([DOI](https://doi.org/10.1007/978-3-319-91086-4_5))
